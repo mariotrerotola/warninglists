@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.fca.org.uk/">
+  <channel>
+    <title>Synthetic feed with the structure of the FCA warnings RSS</title>
+    <link>https://www.fca.org.uk/</link>
+    <item>
+  <title>Zentravolt Markets (new)</title>
+  <link>https://www.fca.org.uk/news/warnings/zentravolt-markets</link>
+  <description>&lt;warned_type&gt;Unauthorized&lt;/warned_type&gt;This firm may be providing or promoting financial services or products without our permission.
+              Unauthorised firm details
+  Name: Zentravolt Markets
+  Address: 1 Imaginary Street, Nowhere
+  Telephone: +440000000001
+  Email: desk@zentravolt-markets.com
+
+  Website: &lt;warned&gt;www.zentravolt-markets.com&lt;/warned&gt;
+Some firms may give incorrect contact details.
+              What this means for you
+If you deal with this firm, you won't have access to the Financial Ombudsman Service.</description>
+  <pubDate>Monday, October 12, 2026 - 17:00</pubDate>
+  <guid isPermaLink="false">900001</guid>
+</item>
+<item>
+  <title>Quorlex Wealth (clone of FCA authorised firm) (new)</title>
+  <link>https://www.fca.org.uk/news/warnings/quorlex-wealth-clone</link>
+  <description>&lt;warned_type&gt;Clone&lt;/warned_type&gt;Fraudsters copy the details of firms we authorise.
+              Clone firm details
+Fraudsters are using the following details to scam people:
+
+  Name: Quorlex Wealth (clone of FCA authorised firm)
+  Email: info@quorlex-wealth.net
+
+  Website: &lt;warned&gt;https://quorlex-wealth.net/&lt;/warned&gt;
+              FCA authorised firm details
+This is the genuine, authorised firm that the fraudsters are claiming to work for.
+
+The correct details are:
+
+      Firm Name: Quorlex Genuine Advisers Ltd
+      Firm Reference Number: 999999
+      Telephone: +440000000002
+      Email: contact@quorlex-genuine.co.uk
+      Website: www.quorlex-genuine.co.uk</description>
+  <pubDate>Tuesday, October 6, 2026 - 12:00</pubDate>
+  <guid isPermaLink="false">900002</guid>
+</item>
+  </channel>
+</rss>

@@ -1,0 +1,62 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "warninglists"
+version = "0.1.0"
+description = "Regulator warning lists (IOSCO I-SCAN, CONSOB website blocking orders, FCA) in one schema, with domain and name matching. Library, CLI and MCP server."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Mario Trerotola" }]
+keywords = [
+  "suptech", "regtech", "financial-crime", "investment-fraud", "warning-list",
+  "iosco", "consob", "fca", "typosquatting", "mcp",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: Legal Industry",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Office/Business :: Financial",
+  "Topic :: Security",
+]
+dependencies = [
+  "publicsuffixlist>=1.0",
+  "idna>=3.6",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.2"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+warninglists = "warninglists.cli:main"
+
+[project.urls]
+Documentation = "https://github.com/mariotrerotola/warninglists#readme"
+Source = "https://github.com/mariotrerotola/warninglists"
+Issues = "https://github.com/mariotrerotola/warninglists/issues"
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "docs", "README.md", "LICENSE", "CHANGELOG.md"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/warninglists"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: hits the live regulator sites (deselect with -m 'not network')"]
+addopts = "-m 'not network'"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
